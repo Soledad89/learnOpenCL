@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
-               BuildableName = "Rotate"
-               BlueprintName = "Rotate"
-               ReferencedContainer = "container:Rotate.xcodeproj">
+               BlueprintIdentifier = "EB514BCA1B1414C500E57A2D"
+               BuildableName = "HelloOpenCL"
+               BlueprintName = "HelloOpenCL"
+               ReferencedContainer = "container:HelloOpenCL.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
-            BuildableName = "Rotate"
-            BlueprintName = "Rotate"
-            ReferencedContainer = "container:Rotate.xcodeproj">
+            BlueprintIdentifier = "EB514BCA1B1414C500E57A2D"
+            BuildableName = "HelloOpenCL"
+            BlueprintName = "HelloOpenCL"
+            ReferencedContainer = "container:HelloOpenCL.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,10 +52,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
-            BuildableName = "Rotate"
-            BlueprintName = "Rotate"
-            ReferencedContainer = "container:Rotate.xcodeproj">
+            BlueprintIdentifier = "EB514BCA1B1414C500E57A2D"
+            BuildableName = "HelloOpenCL"
+            BlueprintName = "HelloOpenCL"
+            ReferencedContainer = "container:HelloOpenCL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
-            BuildableName = "Rotate"
-            BlueprintName = "Rotate"
-            ReferencedContainer = "container:Rotate.xcodeproj">
+            BlueprintIdentifier = "EB514BCA1B1414C500E57A2D"
+            BuildableName = "HelloOpenCL"
+            BlueprintName = "HelloOpenCL"
+            ReferencedContainer = "container:HelloOpenCL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

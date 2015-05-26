@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
-               BuildableName = "Rotate"
-               BlueprintName = "Rotate"
-               ReferencedContainer = "container:Rotate.xcodeproj">
+               BlueprintIdentifier = "EB3EBC841B14A14B006FB03B"
+               BuildableName = "Convolution"
+               BlueprintName = "Convolution"
+               ReferencedContainer = "container:Convolution.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
-            BuildableName = "Rotate"
-            BlueprintName = "Rotate"
-            ReferencedContainer = "container:Rotate.xcodeproj">
+            BlueprintIdentifier = "EB3EBC841B14A14B006FB03B"
+            BuildableName = "Convolution"
+            BlueprintName = "Convolution"
+            ReferencedContainer = "container:Convolution.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,10 +52,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
-            BuildableName = "Rotate"
-            BlueprintName = "Rotate"
-            ReferencedContainer = "container:Rotate.xcodeproj">
+            BlueprintIdentifier = "EB3EBC841B14A14B006FB03B"
+            BuildableName = "Convolution"
+            BlueprintName = "Convolution"
+            ReferencedContainer = "container:Convolution.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
-            BuildableName = "Rotate"
-            BlueprintName = "Rotate"
-            ReferencedContainer = "container:Rotate.xcodeproj">
+            BlueprintIdentifier = "EB3EBC841B14A14B006FB03B"
+            BuildableName = "Convolution"
+            BlueprintName = "Convolution"
+            ReferencedContainer = "container:Convolution.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
