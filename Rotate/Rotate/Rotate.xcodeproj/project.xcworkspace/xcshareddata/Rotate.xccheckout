@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BB44965E-9600-4D91-8C14-9BCAA2D4E0B8</string>
+	<string>166464F1-FBF5-4C76-9E0F-9333D0BC08AC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Rotate</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B10376E70A42ABA42C60FF6276842EC3649C8A7C</key>
 		<string>github.com:Soledad89/learnOpenCL.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Rotate/Rotate/Rotate.xcodeproj/project.xcworkspace</string>
+	<string>Rotate/Rotate/Rotate.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B10376E70A42ABA42C60FF6276842EC3649C8A7C</key>

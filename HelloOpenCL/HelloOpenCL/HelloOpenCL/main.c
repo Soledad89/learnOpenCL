@@ -112,7 +112,7 @@ int main(int argc, char** argv)
         data[i] = rand() / (float)RAND_MAX;
     
     // Connect to a compute device
-    //
+    
     int gpu = 1;
     err = clGetDeviceIDs(NULL, gpu ? CL_DEVICE_TYPE_GPU : CL_DEVICE_TYPE_CPU, 1, &device_id, NULL);
     if (err != CL_SUCCESS)

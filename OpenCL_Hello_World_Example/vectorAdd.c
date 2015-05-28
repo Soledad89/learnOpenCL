@@ -3,6 +3,7 @@
 // System includes
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 // OpenCL includes
 #include <OpenCL/opencl.h>
@@ -29,12 +30,13 @@ int main() {
     // This code executes on the OpenCL host
     
     // Host data
+    
     int *A = NULL;  // Input array
     int *B = NULL;  // Input array
     int *C = NULL;  // Output array
     
     // Elements in each array
-    const int elements = 2048;   
+    const int elements = 20480000;
     
     // Compute the size of the data 
     size_t datasize = sizeof(int)*elements;
@@ -48,6 +50,10 @@ int main() {
         A[i] = i;
         B[i] = i;
     }
+    
+    clock_t start, finish;
+    double duration;
+    start = clock();
 
     // Use this to check the output of each API call
     cl_int status;  
@@ -100,7 +106,7 @@ int main() {
         numDevices, 
         devices, 
         NULL);
-
+    
     //-----------------------------------------------------
     // STEP 3: Create a context
     //----------------------------------------------------- 
@@ -128,7 +134,7 @@ int main() {
     // on
     cmdQueue = clCreateCommandQueue(
         context, 
-        devices[0], 
+        devices[1],//GPU
         0, 
         &status);
 
@@ -302,7 +308,17 @@ int main() {
         NULL, 
         NULL);
 
+    finish = clock();
+    printf("GPU processing Duration: %f\n", (double)(finish - start)/CLOCKS_PER_SEC);
     // Verify the output
+    
+    start = clock();
+    for(int i = 0; i < elements; i++){
+        C[i] = A[i] + B[i];
+    }
+    finish = clock();
+    printf("CPU processing duration: %f\n", (double)(finish - start)/CLOCKS_PER_SEC);
+    
     bool result = true;
     for(int i = 0; i < elements; i++) {
         if(C[i] != i+i) {
@@ -310,6 +326,7 @@ int main() {
             break;
         }
     }
+    
     if(result) {
         printf("Output is correct\n");
     } else {

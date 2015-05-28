@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB3EBC771B14A110006FB03B /* bmpfuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = EB3EBC731B14A110006FB03B /* bmpfuncs.c */; };
-		EB3EBC781B14A110006FB03B /* rotation.c in Sources */ = {isa = PBXBuildFile; fileRef = EB3EBC751B14A110006FB03B /* rotation.c */; };
-		EB3EBC791B14A110006FB03B /* rotation.cl in Sources */ = {isa = PBXBuildFile; fileRef = EB3EBC761B14A110006FB03B /* rotation.cl */; };
-		EB3EBC7B1B14A12A006FB03B /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3EBC7A1B14A12A006FB03B /* OpenCL.framework */; };
+		EB3EBCC01B14AEB5006FB03B /* bmpfuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = EB3EBCBB1B14AEB5006FB03B /* bmpfuncs.c */; };
+		EB3EBCC11B14AEB5006FB03B /* rotation.cl in Sources */ = {isa = PBXBuildFile; fileRef = EB3EBCBE1B14AEB5006FB03B /* rotation.cl */; };
+		EB3EBCC41B14AEC3006FB03B /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3EBCC31B14AEC3006FB03B /* OpenCL.framework */; };
+		EB3EBCC81B14AF4E006FB03B /* rotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB3EBCC71B14AF4E006FB03B /* rotation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EB3EBC671B14A0FB006FB03B /* CopyFiles */ = {
+		EB3EBCAF1B14AE9F006FB03B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,50 +26,52 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EB3EBC691B14A0FB006FB03B /* Rotate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Rotate; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB3EBC731B14A110006FB03B /* bmpfuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bmpfuncs.c; path = ../../bmpfuncs.c; sourceTree = "<group>"; };
-		EB3EBC741B14A110006FB03B /* bmpfuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bmpfuncs.h; path = ../../bmpfuncs.h; sourceTree = "<group>"; };
-		EB3EBC751B14A110006FB03B /* rotation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rotation.c; path = ../../rotation.c; sourceTree = "<group>"; };
-		EB3EBC761B14A110006FB03B /* rotation.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; name = rotation.cl; path = ../../rotation.cl; sourceTree = "<group>"; };
-		EB3EBC7A1B14A12A006FB03B /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		EB3EBCB11B14AE9F006FB03B /* Rotate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Rotate; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3EBCBB1B14AEB5006FB03B /* bmpfuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bmpfuncs.c; path = ../../bmpfuncs.c; sourceTree = "<group>"; };
+		EB3EBCBC1B14AEB5006FB03B /* bmpfuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bmpfuncs.h; path = ../../bmpfuncs.h; sourceTree = "<group>"; };
+		EB3EBCBD1B14AEB5006FB03B /* cl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cl.hpp; path = ../../cl.hpp; sourceTree = "<group>"; };
+		EB3EBCBE1B14AEB5006FB03B /* rotation.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; name = rotation.cl; path = ../../rotation.cl; sourceTree = "<group>"; };
+		EB3EBCC31B14AEC3006FB03B /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		EB3EBCC71B14AF4E006FB03B /* rotation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rotation.cpp; path = ../rotation.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EB3EBC661B14A0FB006FB03B /* Frameworks */ = {
+		EB3EBCAE1B14AE9F006FB03B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB3EBC7B1B14A12A006FB03B /* OpenCL.framework in Frameworks */,
+				EB3EBCC41B14AEC3006FB03B /* OpenCL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EB3EBC601B14A0FB006FB03B = {
+		EB3EBCA81B14AE9F006FB03B = {
 			isa = PBXGroup;
 			children = (
-				EB3EBC7A1B14A12A006FB03B /* OpenCL.framework */,
-				EB3EBC6B1B14A0FB006FB03B /* Rotate */,
-				EB3EBC6A1B14A0FB006FB03B /* Products */,
+				EB3EBCC31B14AEC3006FB03B /* OpenCL.framework */,
+				EB3EBCB31B14AE9F006FB03B /* Rotate */,
+				EB3EBCB21B14AE9F006FB03B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EB3EBC6A1B14A0FB006FB03B /* Products */ = {
+		EB3EBCB21B14AE9F006FB03B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB3EBC691B14A0FB006FB03B /* Rotate */,
+				EB3EBCB11B14AE9F006FB03B /* Rotate */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EB3EBC6B1B14A0FB006FB03B /* Rotate */ = {
+		EB3EBCB31B14AE9F006FB03B /* Rotate */ = {
 			isa = PBXGroup;
 			children = (
-				EB3EBC731B14A110006FB03B /* bmpfuncs.c */,
-				EB3EBC741B14A110006FB03B /* bmpfuncs.h */,
-				EB3EBC751B14A110006FB03B /* rotation.c */,
-				EB3EBC761B14A110006FB03B /* rotation.cl */,
+				EB3EBCC71B14AF4E006FB03B /* rotation.cpp */,
+				EB3EBCBB1B14AEB5006FB03B /* bmpfuncs.c */,
+				EB3EBCBC1B14AEB5006FB03B /* bmpfuncs.h */,
+				EB3EBCBD1B14AEB5006FB03B /* cl.hpp */,
+				EB3EBCBE1B14AEB5006FB03B /* rotation.cl */,
 			);
 			path = Rotate;
 			sourceTree = "<group>";
@@ -77,13 +79,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB3EBC681B14A0FB006FB03B /* Rotate */ = {
+		EB3EBCB01B14AE9F006FB03B /* Rotate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB3EBC701B14A0FB006FB03B /* Build configuration list for PBXNativeTarget "Rotate" */;
+			buildConfigurationList = EB3EBCB81B14AE9F006FB03B /* Build configuration list for PBXNativeTarget "Rotate" */;
 			buildPhases = (
-				EB3EBC651B14A0FB006FB03B /* Sources */,
-				EB3EBC661B14A0FB006FB03B /* Frameworks */,
-				EB3EBC671B14A0FB006FB03B /* CopyFiles */,
+				EB3EBCAD1B14AE9F006FB03B /* Sources */,
+				EB3EBCAE1B14AE9F006FB03B /* Frameworks */,
+				EB3EBCAF1B14AE9F006FB03B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -91,55 +93,55 @@
 			);
 			name = Rotate;
 			productName = Rotate;
-			productReference = EB3EBC691B14A0FB006FB03B /* Rotate */;
+			productReference = EB3EBCB11B14AE9F006FB03B /* Rotate */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EB3EBC611B14A0FB006FB03B /* Project object */ = {
+		EB3EBCA91B14AE9F006FB03B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = wangbo;
 				TargetAttributes = {
-					EB3EBC681B14A0FB006FB03B = {
+					EB3EBCB01B14AE9F006FB03B = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
 			};
-			buildConfigurationList = EB3EBC641B14A0FB006FB03B /* Build configuration list for PBXProject "Rotate" */;
+			buildConfigurationList = EB3EBCAC1B14AE9F006FB03B /* Build configuration list for PBXProject "Rotate" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = EB3EBC601B14A0FB006FB03B;
-			productRefGroup = EB3EBC6A1B14A0FB006FB03B /* Products */;
+			mainGroup = EB3EBCA81B14AE9F006FB03B;
+			productRefGroup = EB3EBCB21B14AE9F006FB03B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB3EBC681B14A0FB006FB03B /* Rotate */,
+				EB3EBCB01B14AE9F006FB03B /* Rotate */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EB3EBC651B14A0FB006FB03B /* Sources */ = {
+		EB3EBCAD1B14AE9F006FB03B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB3EBC791B14A110006FB03B /* rotation.cl in Sources */,
-				EB3EBC771B14A110006FB03B /* bmpfuncs.c in Sources */,
-				EB3EBC781B14A110006FB03B /* rotation.c in Sources */,
+				EB3EBCC11B14AEB5006FB03B /* rotation.cl in Sources */,
+				EB3EBCC81B14AF4E006FB03B /* rotation.cpp in Sources */,
+				EB3EBCC01B14AEB5006FB03B /* bmpfuncs.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		EB3EBC6E1B14A0FB006FB03B /* Debug */ = {
+		EB3EBCB61B14AE9F006FB03B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -181,7 +183,7 @@
 			};
 			name = Debug;
 		};
-		EB3EBC6F1B14A0FB006FB03B /* Release */ = {
+		EB3EBCB71B14AE9F006FB03B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,14 +218,14 @@
 			};
 			name = Release;
 		};
-		EB3EBC711B14A0FB006FB03B /* Debug */ = {
+		EB3EBCB91B14AE9F006FB03B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		EB3EBC721B14A0FB006FB03B /* Release */ = {
+		EB3EBCBA1B14AE9F006FB03B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -233,24 +235,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB3EBC641B14A0FB006FB03B /* Build configuration list for PBXProject "Rotate" */ = {
+		EB3EBCAC1B14AE9F006FB03B /* Build configuration list for PBXProject "Rotate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB3EBC6E1B14A0FB006FB03B /* Debug */,
-				EB3EBC6F1B14A0FB006FB03B /* Release */,
+				EB3EBCB61B14AE9F006FB03B /* Debug */,
+				EB3EBCB71B14AE9F006FB03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB3EBC701B14A0FB006FB03B /* Build configuration list for PBXNativeTarget "Rotate" */ = {
+		EB3EBCB81B14AE9F006FB03B /* Build configuration list for PBXNativeTarget "Rotate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB3EBC711B14A0FB006FB03B /* Debug */,
-				EB3EBC721B14A0FB006FB03B /* Release */,
+				EB3EBCB91B14AE9F006FB03B /* Debug */,
+				EB3EBCBA1B14AE9F006FB03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EB3EBC611B14A0FB006FB03B /* Project object */;
+	rootObject = EB3EBCA91B14AE9F006FB03B /* Project object */;
 }

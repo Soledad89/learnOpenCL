@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A58ABB91-102A-4B4D-BB63-B1E5B522FFFA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>HelloOpenCL</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B10376E70A42ABA42C60FF6276842EC3649C8A7C</key>
 		<string>github.com:Soledad89/learnOpenCL.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HelloOpenCL/HelloOpenCL/HelloOpenCL.xcodeproj/project.xcworkspace</string>
+	<string>HelloOpenCL/HelloOpenCL/HelloOpenCL.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B10376E70A42ABA42C60FF6276842EC3649C8A7C</key>

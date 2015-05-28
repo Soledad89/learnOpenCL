@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C3770EFD0E6F1138009A5A77 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3770EFC0E6F1138009A5A77 /* OpenCL.framework */; };
 		EB514BDA1B14509800E57A2D /* vectorAdd.c in Sources */ = {isa = PBXBuildFile; fileRef = EB514BD91B14509800E57A2D /* vectorAdd.c */; };
-		EB514BDC1B1450C800E57A2D /* hello.c in Sources */ = {isa = PBXBuildFile; fileRef = EB514BDB1B1450C800E57A2D /* hello.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +27,6 @@
 		466E0F5F0C932E1A00ED01DB /* hello */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hello; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3770EFC0E6F1138009A5A77 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = /System/Library/Frameworks/OpenCL.framework; sourceTree = "<absolute>"; };
 		EB514BD91B14509800E57A2D /* vectorAdd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vectorAdd.c; sourceTree = "<group>"; };
-		EB514BDB1B1450C800E57A2D /* hello.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hello.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 		C3770EF10E6F10BB009A5A77 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				EB514BDB1B1450C800E57A2D /* hello.c */,
 				EB514BD91B14509800E57A2D /* vectorAdd.c */,
 			);
 			name = Sources;
@@ -129,7 +126,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB514BDC1B1450C800E57A2D /* hello.c in Sources */,
 				EB514BDA1B14509800E57A2D /* vectorAdd.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

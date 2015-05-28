@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EB3EBC931B14A15D006FB03B /* bmpfuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = EB3EBC8F1B14A15D006FB03B /* bmpfuncs.c */; };
-		EB3EBC941B14A15D006FB03B /* convolution.c in Sources */ = {isa = PBXBuildFile; fileRef = EB3EBC911B14A15D006FB03B /* convolution.c */; };
 		EB3EBC951B14A15D006FB03B /* convolution.cl in Sources */ = {isa = PBXBuildFile; fileRef = EB3EBC921B14A15D006FB03B /* convolution.cl */; };
 		EB3EBC971B14A173006FB03B /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3EBC961B14A173006FB03B /* OpenCL.framework */; };
+		EB3EBC9C1B14AB38006FB03B /* convolution.c in Sources */ = {isa = PBXBuildFile; fileRef = EB3EBC9B1B14AB38006FB03B /* convolution.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,9 +29,9 @@
 		EB3EBC851B14A14B006FB03B /* Convolution */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Convolution; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3EBC8F1B14A15D006FB03B /* bmpfuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bmpfuncs.c; path = ../../bmpfuncs.c; sourceTree = "<group>"; };
 		EB3EBC901B14A15D006FB03B /* bmpfuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bmpfuncs.h; path = ../../bmpfuncs.h; sourceTree = "<group>"; };
-		EB3EBC911B14A15D006FB03B /* convolution.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = convolution.c; path = ../../convolution.c; sourceTree = "<group>"; };
 		EB3EBC921B14A15D006FB03B /* convolution.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; name = convolution.cl; path = ../../convolution.cl; sourceTree = "<group>"; };
 		EB3EBC961B14A173006FB03B /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		EB3EBC9B1B14AB38006FB03B /* convolution.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = convolution.c; path = ../../convolution.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +66,9 @@
 		EB3EBC871B14A14B006FB03B /* Convolution */ = {
 			isa = PBXGroup;
 			children = (
+				EB3EBC9B1B14AB38006FB03B /* convolution.c */,
 				EB3EBC8F1B14A15D006FB03B /* bmpfuncs.c */,
 				EB3EBC901B14A15D006FB03B /* bmpfuncs.h */,
-				EB3EBC911B14A15D006FB03B /* convolution.c */,
 				EB3EBC921B14A15D006FB03B /* convolution.cl */,
 			);
 			path = Convolution;
@@ -131,8 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB3EBC931B14A15D006FB03B /* bmpfuncs.c in Sources */,
-				EB3EBC941B14A15D006FB03B /* convolution.c in Sources */,
 				EB3EBC951B14A15D006FB03B /* convolution.cl in Sources */,
+				EB3EBC9C1B14AB38006FB03B /* convolution.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +249,7 @@
 				EB3EBC8E1B14A14B006FB03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

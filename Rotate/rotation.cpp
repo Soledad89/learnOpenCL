@@ -8,6 +8,8 @@
 #include <fstream>
 #include <math.h>
 #include <string>
+#include "cl.hpp"
+#include "time.h"
 
 //BMP utilities
 #include "bmpfuncs.h"
@@ -31,14 +33,18 @@ try {
     for (cl::vector<cl::Platform>::iterator i = platforms.begin(); i != platforms.end(); ++i) {
         // pick a platform and do something
         std::cout << " Platform Name: " << (*i).getInfo<CL_PLATFORM_NAME>().c_str()<< std::endl;
+        std::cout << " Platform Name: " << (*i).getInfo<CL_PLATFORM_PROFILE>().c_str()<< std::endl;
+        std::cout << " Platform Name: " << (*i).getInfo<CL_PLATFORM_VENDOR>().c_str()<< std::endl;
+        std::cout << " Platform Name: " << (*i).getInfo<CL_PLATFORM_VERSION>().c_str()<< std::endl;
+        std::cout << " Platform Name: " << (*i).getInfo<CL_PLATFORM_EXTENSIONS>().c_str()<< std::endl;
     }
 
     float theta = 3.14159/6;
     int W ;
     int H ;
 
-    const char* inputFile = "input.bmp";
-    const char* outputFile = "output.bmp";
+    const char* inputFile = "/Users/wangbo1/scripts/learnOpenCL/Rotate/input.bmp";
+    const char* outputFile = "/Users/wangbo1/scripts/learnOpenCL/Rotate/output.bmp";//
 
     // Homegrown function to read a BMP from file
     float* ip = readImage(inputFile, &W, &H);
@@ -59,7 +65,7 @@ try {
     cl::vector<cl::Device> devices = context.getInfo<CL_CONTEXT_DEVICES>();
 
     //Lets create a command queue on the first device
-    cl::CommandQueue queue = cl::CommandQueue(context, devices[0], 0, &err);
+    cl::CommandQueue queue = cl::CommandQueue(context, devices[0], 0, &err);//devices[0]一般为GPU
 
     //[H3] Step2 – Declare Buffers and Move Data
 
@@ -74,7 +80,7 @@ try {
 
     //[H3]Step3 – Runtime kernel compilation
 
-    std::ifstream sourceFileName("rotation.cl");
+    std::ifstream sourceFileName("/Users/wangbo1/scripts/learnOpenCL/Rotate/rotation.cl");
 
 
     std::string sourceFile(

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
+               BlueprintIdentifier = "EB3EBCB01B14AE9F006FB03B"
                BuildableName = "Rotate"
                BlueprintName = "Rotate"
                ReferencedContainer = "container:Rotate.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
+            BlueprintIdentifier = "EB3EBCB01B14AE9F006FB03B"
             BuildableName = "Rotate"
             BlueprintName = "Rotate"
             ReferencedContainer = "container:Rotate.xcodeproj">
@@ -52,7 +52,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
+            BlueprintIdentifier = "EB3EBCB01B14AE9F006FB03B"
             BuildableName = "Rotate"
             BlueprintName = "Rotate"
             ReferencedContainer = "container:Rotate.xcodeproj">
@@ -71,7 +71,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3EBC681B14A0FB006FB03B"
+            BlueprintIdentifier = "EB3EBCB01B14AE9F006FB03B"
             BuildableName = "Rotate"
             BlueprintName = "Rotate"
             ReferencedContainer = "container:Rotate.xcodeproj">

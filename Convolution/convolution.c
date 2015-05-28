@@ -81,8 +81,8 @@ int main() {
    int imageHeight;
    int imageWidth;
 
-   const char* inputFile = "/Users/wangbo1/scripts/learnOpenCL/Rotate/input.bmp";
-   const char* outputFile = "/Users/wangbo1/scripts/learnOpenCL/Rotate/output.bmp";
+   const char* inputFile = "/Users/wangbo1/scripts/learnOpenCL/Convolution/input.bmp";
+   const char* outputFile = "/Users/wangbo1/scripts/learnOpenCL/Convolution/output.bmp";
 
    // Homegrown function to read a BMP from file
    float* inputImage = readImage(inputFile, &imageWidth,
@@ -102,7 +102,7 @@ int main() {
       {0,      0,      0,      0,      0,      0,      0,
        0,      0,      0,      0,      0,      0,      0,
        0,      0,     -1,      0,      1,      0,      0,
-       0,      0,     -2,      0,      2,      0,      0,
+       0,      0,     -3,      0,      3,      0,      0,
        0,      0,     -1,      0,      1,      0,      0,
        0,      0,      0,      0,      0,      0,      0,
        0,      0,      0,      0,      0,      0,      0};
@@ -121,7 +121,7 @@ int main() {
 
    // Discover device
    cl_device_id device;
-   clGetDeviceIDs(platform, CL_DEVICE_TYPE_ALL, 1, &device, NULL);
+   clGetDeviceIDs(platform, CL_DEVICE_TYPE_GPU, 1, &device, NULL);
    chk(status, "clGetDeviceIDs");
 
    // Create context
@@ -141,14 +141,30 @@ int main() {
    format.image_channel_order     = CL_R;     // single channel
    format.image_channel_data_type = CL_FLOAT; // float data type
 
+    //////
+    
+    cl_image_desc image_desc;
+    image_desc.image_type = CL_MEM_OBJECT_IMAGE2D;
+    image_desc.image_width = imageWidth;
+    image_desc.image_height = imageHeight;
+    image_desc.image_depth = 1;
+    image_desc.image_array_size = 1;
+    image_desc.image_row_pitch = 0;
+    image_desc.image_slice_pitch = 0;
+    image_desc.num_mip_levels = 0;
+    image_desc.num_samples = 0;
+    image_desc.buffer = NULL;
+    
+    cl_mem d_inputImage = clCreateImage(context,CL_MEM_READ_ONLY, &format, &image_desc, NULL,&status);
+    chk(status, "clCreateImage2D");
+    //////
    // Create space for the source image on the device
-   cl_mem d_inputImage = clCreateImage2D(context, 0, &format, imageWidth,
-      imageHeight, 0, NULL, &status);
-   chk(status, "clCreateImage2D");
+//   cl_mem d_inputImage = clCreateImage2D(context, 0, &format, imageWidth,
+//      imageHeight, 0, NULL, &status);
+//   chk(status, "clCreateImage2D");
 
    // Create space for the output image on the device
-   cl_mem d_outputImage = clCreateImage2D(context, 0, &format, imageWidth, 
-      imageHeight, 0, NULL, &status);
+   cl_mem d_outputImage = clCreateImage(context,CL_MEM_WRITE_ONLY, &format, &image_desc, NULL,&status);
    chk(status, "clCreateImage2D");
 
    // Create space for the 7x7 filter on the device
@@ -173,7 +189,7 @@ int main() {
       CL_ADDRESS_CLAMP_TO_EDGE, CL_FILTER_NEAREST, &status);
    chk(status, "clCreateSampler");
 
-   const char* source = readSource("/Users/wangbo1/scripts/learnOpenCL/Rotate/convolution.cl");
+   const char* source = readSource("/Users/wangbo1/scripts/learnOpenCL/Convolution/convolution.cl");
 
    // Create a program object with source and build it
    cl_program program;
@@ -189,12 +205,18 @@ int main() {
 
    // Set the kernel arguments
    status  = clSetKernelArg(kernel, 0, sizeof(cl_mem), &d_inputImage);
+    //chk(status, "clSetKernelArg0");
    status |= clSetKernelArg(kernel, 1, sizeof(cl_mem), &d_outputImage);
-   status |= clSetKernelArg(kernel, 2, sizeof(int), &imageHeight);
-   status |= clSetKernelArg(kernel, 3, sizeof(int), &imageWidth);
-   status |= clSetKernelArg(kernel, 4, sizeof(cl_mem), &d_filter);
-   status |= clSetKernelArg(kernel, 5, sizeof(int), &filterWidth);
-   status |= clSetKernelArg(kernel, 6, sizeof(cl_sampler), &sampler);
+    //chk(status, "clSetKernelArg1");
+    status |= clSetKernelArg(kernel, 2, sizeof(int), &imageHeight);
+   //chk(status, "clSetKernelArg2");
+    status |= clSetKernelArg(kernel, 3, sizeof(int), &imageWidth);
+   //chk(status, "clSetKernelArg3");
+    status |= clSetKernelArg(kernel, 4, sizeof(cl_mem), &d_filter);
+   //chk(status, "clSetKernelArg4");
+    status |= clSetKernelArg(kernel, 5, sizeof(int), &filterWidth);
+   //chk(status, "clSetKernelArg5");
+    status |= clSetKernelArg(kernel, 6, sizeof(cl_sampler), &sampler);
    chk(status, "clSetKernelArg");
 
    // Set the work item dimensions
